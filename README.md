@@ -18,12 +18,12 @@ Tienes máximo 90 minutos para trabajar en los siguientes problemas. Puedes util
 
 ### Desafío Principal
 
-1.- Crea una migración para una tabla que se llame **Libros** con los campos **nombre**, **descripcion**, **idioma**, **precio**, **estado** (boolean), **fecha_ingreso**, **ediciones_pasdas** (json).
-2.- Crea un modelo con los casts necesarios.
-3.- Instala Sanctum.
-4.- Crea un endpoint que se llame **/api/libros** para crear un libro.
-5.- Crea otro endpoint que se llame **/api/libros** para obtener los libros de la base de datos.
-6.- Crea un **Scheduale** que ejecute un **Job** cada 10 minutos que revise que todos los libros tengan descripción, en caso de que haya alguno que no tenga descripción que envíe un email de forma automática avisando de esta situación.
+1. Crea una migración para una tabla que se llame **Libros** con los campos **nombre**, **descripcion**, **idioma**, **precio**, **estado** (boolean), **fecha_ingreso**, **ediciones_pasdas** (json).
+2. Crea un modelo con los casts necesarios.
+3. Instala Sanctum.
+4. Crea un endpoint que se llame **/api/libros** para crear un libro.
+5. Crea otro endpoint que se llame **/api/libros** para obtener los libros de la base de datos.
+6. Crea un **Scheduale** que ejecute un **Job** cada 10 minutos que revise que todos los libros tengan descripción, en caso de que haya alguno que no tenga descripción que envíe un email de forma automática avisando de esta situación.
 
 ## Término
 
