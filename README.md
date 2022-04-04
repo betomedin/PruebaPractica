@@ -1,6 +1,6 @@
 # PruebaPractica
 
-Esta prueba práctica tiene como finalidad evaluar cómo resuleves los siguientes problemas.
+Esta prueba práctica tiene como finalidad evaluar cómo resuelves los siguientes problemas.
 
 Lee muy bien estas instrucciones antes de empezar. Solo podrás hacer preguntas antes de comenzar.
 
@@ -30,7 +30,7 @@ Tienes máximo 90 minutos para trabajar en los siguientes problemas. Puedes util
 6. Crea otro endpoint que se llame **/api/dias** para obtener los dias de la base de datos. Este endpoint debe tener como parámetros opcionales **inicio** y **termino** para un rango de días acotado.
 7. Crea un **Schedule** que ejecute un **Job** cada 10 minutos que revise que todos los dias **no** tengan imágenes, en caso de que haya alguno que no tenga ninguna imagen, debes obtener al menos una imagen para cada día utilizando la API APOD de la NASA (https://api.nasa.gov/). Si no hay imagen disponible para el día, debes dejar una nota en el campo **descripcion**
 
-## Vue
+#### Vue
 
 1. Instala Axios y configuralo para consumir la API del proyecto que hiciste en Laravel.
 2. Crea una vista y programa un calendario que muestre un mes completo. El usuario debe poder camibar de mes libremente. Los días debes generarlos utilzando la clase Date de Javascript o puedes instalar alguna librería para manejar fechas. No puedes ocupar un componente que cree el calendario, lo debes programar tú.
