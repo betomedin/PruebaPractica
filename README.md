@@ -6,7 +6,7 @@ Lee muy bien estas instrucciones antes de empezar. Solo podrás hacer preguntas 
 
 ## Instrucciones
 
-Tienes máximo 90 minutos para trabajar en los siguientes problemas. Puedes utilizar cualquier recurso que quieras. Puedes buscar en google pero no puedes llamar ni escribirle a nadie, debes resolver esto con tus propios medios.
+Tienes máximo 120 minutos para trabajar en los siguientes problemas. Puedes utilizar cualquier recurso que quieras. Puedes buscar en google pero no puedes llamar ni escribirle a nadie, debes resolver esto con tus propios medios.
 
 ### Problemas de Instalación
 
