@@ -8,8 +8,6 @@ Lee muy bien estas instrucciones antes de empezar. Solo podrás hacer preguntas 
 
 Tienes máximo 90 minutos para trabajar en los siguientes problemas. Puedes utilizar cualquier recurso que quieras. Puedes buscar en google pero no puedes llamar ni escribirle a nadie, debes resolver esto con tus propios medios.
 
-## Laravel
-
 ### Problemas de Instalación
 
 1. Debes clonar este repositorio en el computador que estás utilizando. No importa donde.
