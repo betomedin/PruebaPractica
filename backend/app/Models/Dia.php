@@ -12,9 +12,9 @@ class Dia extends Model
     protected $fillable = ["fecha", "descripcion", "estado", "imagenes"];
     protected $casts = ["imagenes" => "json"];
 
-    public static function getImages()
+    public static function getImages($date = "")
     {
-        $today = (new DateTime())->format('Y-m-d');
+        $today = (new DateTime($date))->format('Y-m-d');
         // $today = "2022-04-15";
         $curl = curl_init();
         curl_setopt_array($curl, array(
@@ -34,6 +34,13 @@ class Dia extends Model
         if (isset($response->media_type) and $response->media_type == "image") {
             $dia = Dia::where("fecha", $today)->first();
             $dia->imagenes = $response;
+            $dia->estado = 1;
+            $dia->save();
+            return $response;
+        } else {
+            $dia = Dia::where("fecha", $today)->first();
+            $dia->descripcion = "Hoy no hay imagen :(";
+            $dia->estado = 0;
             $dia->save();
             return $response;
         }

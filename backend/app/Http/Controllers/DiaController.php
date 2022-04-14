@@ -36,6 +36,8 @@ class DiaController extends Controller
 
     public function show($inicio = null, $termino = null)
     {
+        $inicio = (new DateTime($inicio))->format("Y-m-d");
+        $termino = (new DateTime($termino))->format("Y-m-d");
         $dias = ($inicio and $termino) ? Dia::whereBetween("fecha", [$inicio, $termino])->get() : Dia::all();
         return $dias->toJson();
     }

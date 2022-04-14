@@ -2,23 +2,36 @@
   <table>
     <thead>
       <tr>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miércoles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-        <th>Sábado</th>
-        <th>Domingo</th>
+        <th>Dia</th>
+        <th>Imagen</th>
       </tr>
     </thead>
+    <tbody>
+      <tr v-for="dia in dias" :key="dia.id">
+        <td>{{ dia.fecha }}</td>
+        <td>
+          <span v-if="dia.estado == 1">
+            <a target="_blank" v-bind:href="dia.imagenes.url"> ver imagen </a>
+          </span>
+          <span v-else>
+            {{ dia.descripcion }}
+          </span>
+        </td>
+      </tr>
+    </tbody>
   </table>
 </template>
 
 <script>
 export default {
-  props: {
-    mes: String,
+  data() {
+    return {};
   },
+  props: {
+    dias: Array,
+  },
+  methods: {},
+  created() {},
 };
 </script>
 
